@@ -1,0 +1,21 @@
+{
+  "name": "coursework2",
+  "version": "1.0.0",
+  "description": "A Hello World HTTP server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianrown/coursework_2/"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "dockerfile"
+  ],
+  "author": "rythepie13@hotmail.co.uk",
+  "license": "ISC"
+}
