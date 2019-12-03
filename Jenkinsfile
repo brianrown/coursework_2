@@ -4,12 +4,7 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-stage('Sonarqube') {
+       stage('Sonarqube') {
     environment {
         scannerHome = tool 'SonarQubeScanner'
     }
