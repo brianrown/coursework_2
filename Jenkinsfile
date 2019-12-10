@@ -1,4 +1,4 @@
-epipeline {
+pipeline {
     agent any
     environment {
         CI = 'true'
@@ -14,7 +14,7 @@ epipeline {
         }
         timeout(time: 10, unit: 'MINUTES') {
             waitForQualityGate abortPipeline: true
-       	 }
+     }
 }
 }
     }
