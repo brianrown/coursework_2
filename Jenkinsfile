@@ -1,4 +1,4 @@
-pipeline {
+epipeline {
     agent any
     environment {
         CI = 'true'
@@ -9,7 +9,7 @@ pipeline {
         scannerHome = tool 'SonarQubeScanner'
     }
     steps {
-        withSonarQubeEnv('sonarqube-container') {
+        withSonarQubeEnv('sonarqube') {
             sh "${scannerHome}/bin/sonar-scanner"
         }
         timeout(time: 10, unit: 'MINUTES') {
