@@ -26,12 +26,12 @@ node {
                 checkout scm
     }
     stage('Build image') {
-               app = docker.build("/home/rbrown232/coursework2")
+               app = docker.build("rbrown232/coursework2")
     }
     stage('Push image') {
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
             app.push("${env.BUILD_NUMBER}")
-            app.push("v2")
+            app.push("lastest")
         }
     }
 }
